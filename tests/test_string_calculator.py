@@ -1,4 +1,4 @@
-from src.string_calculator import StringCalculator
+from ..src.string_calculator import StringCalculator
 
 def test_add_param_vide_return_zero():
     # arrange
