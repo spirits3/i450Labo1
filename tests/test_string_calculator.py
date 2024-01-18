@@ -55,3 +55,12 @@ def test_letter_in_string_return_0():
     somme = StringCalculator.add(mon_param)
     # assert
     assert somme == mon_resultat
+
+def test_multiply_param_vide_return_zero():
+    # arrange
+    mon_param = ""
+    mon_resultat = 0
+    # act
+    somme = StringCalculator.multiply(mon_param)
+    # assert
+    assert somme == mon_resultat
