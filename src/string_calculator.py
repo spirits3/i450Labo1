@@ -12,3 +12,6 @@ class StringCalculator:
                 sum_numbers = 0
         
         return sum_numbers
+
+    def multiply(string_numbers):
+        return 0
