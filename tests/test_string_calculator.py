@@ -73,3 +73,12 @@ def test_return_multiply():
     produit = StringCalculator.multiply(mon_param)
     # assert
     assert produit == mon_resultat
+
+def test_wrong_separator_return_zero_multiply():
+    # arrange
+    mon_param = "7,8"
+    mon_resultat = 0
+    # act
+    somme = StringCalculator.multiply(mon_param)
+    # assert
+    assert somme == mon_resultat
