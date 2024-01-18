@@ -12,12 +12,3 @@ class StringCalculator:
                 sum_numbers = 0
         
         return sum_numbers
-    
-    def multiply(string_numbers):
-        if ";" in string_numbers and not(any(c.isalpha() for c in string_numbers)): 
-            numbers = string_numbers.split(";")
-            prod_number = math.prod(numbers)
-        else:
-            prod_number = 0
-
-        return prod_number
