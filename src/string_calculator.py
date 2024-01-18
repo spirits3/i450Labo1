@@ -15,7 +15,7 @@ class StringCalculator:
 
     def multiply(string_numbers):
         try:
-            numbers = [int(x) for x in string_numbers.split(";") if x.isdigit()]
+            numbers = [int(x) for x in string_numbers.split(";") if (x.isdigit() and int(x) < 1000)]
 
             if len(numbers):
                 product = reduce(lambda x, y: x * y, numbers)
@@ -23,5 +23,5 @@ class StringCalculator:
                 product = 0
         except ValueError:
             product = 0
-            
+
         return product

@@ -94,7 +94,7 @@ def test_alpha_in_input_return_zero_multiply():
 def test_number_superior_1000():
     # arrange
     mon_param = "6;1001;2;3000"
-    mon_resultat = 21
+    mon_resultat = 12
     # act
     somme = StringCalculator.multiply(mon_param)
     # assert
