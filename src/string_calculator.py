@@ -14,11 +14,14 @@ class StringCalculator:
         return sum_numbers
 
     def multiply(string_numbers):
-        numbers = [int(x) for x in string_numbers.split(";") if x.isdigit()]
+        try:
+            numbers = [int(x) for x in string_numbers.split(";") if x.isdigit()]
 
-        if len(numbers):
-            product = reduce(lambda x, y: x * y, numbers)
-        else:
+            if len(numbers):
+                product = reduce(lambda x, y: x * y, numbers)
+            else:
+                product = 0
+        except ValueError:
             product = 0
             
         return product
