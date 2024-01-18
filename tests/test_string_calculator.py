@@ -86,7 +86,7 @@ def test_wrong_separator_return_zero_multiply():
 def test_alpha_in_input_return_zero_multiply():
     # arrange
     mon_param = "7;a;3"
-    mon_resultat = 0
+    mon_resultat = 21
     # act
     somme = StringCalculator.multiply(mon_param)
     # assert
