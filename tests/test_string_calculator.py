@@ -64,3 +64,12 @@ def test_multiply_param_empty_return_zero():
     somme = StringCalculator.multiply(mon_param)
     # assert
     assert somme == mon_resultat
+
+def test_return_multiply():
+    # arrange
+    mon_param = "7;8"
+    mon_resultat = 56
+    # act
+    produit = StringCalculator.multiply(mon_param)
+    # assert
+    assert produit == mon_resultat
